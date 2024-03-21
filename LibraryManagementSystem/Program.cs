@@ -18,6 +18,7 @@ namespace LibraryManagementSystem
             while (true)
             {
                 Console.WriteLine("===== Library Management System =====");
+                Console.WriteLine();
                 Console.WriteLine("1. Add a book");
                 Console.WriteLine("2. Remove a book");
                 Console.WriteLine("3. Display all books");
