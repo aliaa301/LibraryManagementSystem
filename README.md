@@ -21,6 +21,6 @@ Services.Interfaces: Defines the ILibraryRepository interface that declares meth
 
 Services.Repositories: Implements the ILibraryRepository interface in the LibraryRepository class. This class provides functionality for managing the library, including adding and removing books, retrieving all books, searching for books, and checking book availability. It uses a List<Book> to store the books in memory.
 
-ExtensionMethods: Contains the Validator class, which provides methods to validate user inputs. It includes methods for validating publication year, non-empty input, and ID.
+Utilities: Contains the Validator class, which provides methods to validate user inputs. It includes methods for validating publication year, non-empty input, and ID.
 
 Program: The entry point of the application. It contains the Main method that displays the menu and handles user input to perform operations on the library.
