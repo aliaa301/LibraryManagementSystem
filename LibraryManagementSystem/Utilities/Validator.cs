@@ -6,16 +6,19 @@ using System.Threading.Tasks;
 
 namespace LibraryManagementSystem.ExtensionMethods
 {
-    
-    
-        static class Validator
+
+    // Validator class contains methods to validate user inputs
+    static class Validator
         {
+        // GetValidPublicationYear method prompts the user to enter a valid publication year
         public static int GetValidPublicationYear()
         {
             int publicationYear;
             while (true)
             {
                 Console.Write("Enter publication year: ");
+
+                // Try parsing user input to integer, check if it's greater than 0 and not in the future
                 if (int.TryParse(Console.ReadLine(), out publicationYear) && publicationYear > 0 && publicationYear <= DateTime.Now.Year)
                 {
                     break;
@@ -27,6 +30,7 @@ namespace LibraryManagementSystem.ExtensionMethods
             }
             return publicationYear;
         }
+        // GetNonEmptyInput method prompts the user to enter a non-empty string input
         public static string GetNonEmptyInput(string prompt)
         {
             string input;
@@ -45,6 +49,8 @@ namespace LibraryManagementSystem.ExtensionMethods
             }
             return input;
         }
+        
+        // GetValidId method prompts the user to enter a valid ID
         public static int GetValidId()
         {
             int id;
