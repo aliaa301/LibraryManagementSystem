@@ -4,12 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace LibraryManagementSystem.ExtensionMethods
+namespace LibraryManagementSystem.Utilities
 {
 
     // Validator class contains methods to validate user inputs
     static class Validator
-        {
+    {
         // GetValidPublicationYear method prompts the user to enter a valid publication year
         public static int GetValidPublicationYear()
         {
@@ -49,7 +49,7 @@ namespace LibraryManagementSystem.ExtensionMethods
             }
             return input;
         }
-        
+
         // GetValidId method prompts the user to enter a valid ID
         public static int GetValidId()
         {
@@ -72,4 +72,3 @@ namespace LibraryManagementSystem.ExtensionMethods
     }
 }
 
-      
